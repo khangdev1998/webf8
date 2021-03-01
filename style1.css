@@ -1,0 +1,413 @@
+/* VÀO ĐÂY COI LÀM GÌ THẾ CODE CỦA NGƯỜI TA VIẾT SML  */
+
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.text-center {
+	text-align:center;
+}
+
+.letter-4px {
+	letter-spacing:4px;
+}
+
+.text-white {
+	color:#fff;
+}
+
+.heading-text {
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 4px;
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.italic-text {
+	font-style: italic;
+	opacity: 0.60;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	margin: 15px 0;
+	font-size: 15px;
+}
+
+.text-content {
+	margin: 15px 0;
+	font-family: "Lato", sans-serif;
+	font-size: 15px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+.wrapper-content {
+	max-width: 800px;
+	margin: auto;
+	padding: 64px 16px;
+}
+
+.margin {
+	margin: 40px 0;
+}
+
+.margin-8px {
+	margin-top: 12px !important;
+}
+
+
+#header {
+	background-color:#000;
+	height: 47px;
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index: 9999999999999999999999999999999;
+}
+
+#header .nav-menu {
+	display:inline-block;
+	-webkit-user-select:none;
+	user-select:none;
+}
+
+#header .nav-menu li {
+	display: inline-block;
+}
+
+#header .nav-menu li a {
+	font-family:Lato, sans-serif;
+	line-height: 47px;
+	color:#fff;
+	text-transform:uppercase;
+	text-decoration:none;
+	display:block;
+	padding:0 24px;
+}
+
+#header .nav-menu li a:hover {
+	background-color:#ccc;
+	color:#000;
+}
+
+#header .sub-menu {
+	position:absolute;
+	background-color:#fff;
+	min-width:160px;
+	display:none;
+	box-shadow: 0 5px 15px 7px rgb(0 0 0 / 33%);
+	
+	
+}
+
+#header .sub-menu li a {
+	color:#000;
+	text-transform:none;
+}
+
+#header .icon-down {
+	position:relative;
+	top:-3px;
+	left:4px;
+}
+
+#header .search-padding {
+	float:right;
+	padding:0 24px;
+	cursor: pointer;
+}
+
+#header .search-padding:hover{
+	background-color: #f44336;
+	color: #fff;
+	
+}
+
+#header .icon-search {
+	line-height: 47px;
+	color:#fff;
+	font-size:15px;
+}
+
+#header .mobile-menu-btn {
+	float:right;
+	color:#fff;
+	font-size:15px;
+	padding:0 24px;
+	line-height: 47px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+}
+
+#header .mobile-menu-btn:hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+
+
+#silder {
+	background-image: url("image/silder1.jpg");
+	background-size:cover;
+	padding-top:50%;
+	background-repeat:no-repeat;
+	position:relative;
+	margin-top:47px;
+}
+
+#silder .silder-content {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	padding:32px 16px;
+}
+
+#silder .silder-heading {
+	font-size:25px;
+	font-family:"Segoe UI",Arial,sans-serif;
+	font-weight:500;
+	margin:10px 0;
+}
+
+#silder .silder-text {
+	font-weight:900;
+	font-size:18px;
+	margin:15px 0;
+}
+
+#test {
+	background:#ccc;
+	height:1000px;
+}
+
+#header .nav-menu li:hover .sub-menu,#header .sub-menu li {
+	display:block;
+}
+
+#content .text-name {
+	margin: 15px 0;
+	font-family: "Lato", sans-serif;
+	font-size: 15px;
+	text-align: justify;
+	line-height: 25px;
+	text-align: center;
+}
+
+#content .list-img-content {
+	display: flex;
+	justify-content: space-around;
+	padding: 32px 0;
+	
+}
+
+#content .img-content {
+	width: 225px;
+	height: 305px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#content .img-content:hover {
+	opacity: 0.6;
+	transition: .5s;
+}
+
+#wrapper-black {
+	background-color: #000;
+}
+
+
+#wrapper-black .places-list {
+	background-color: #fff;
+	color: #757575;
+	list-style-type: none;
+	font-size: 15px;
+	font-family: "Lato", sans-serif;
+}
+
+#wrapper-black .place-padding {
+	padding: 8px 16px;
+	border-bottom: 1px solid #ddd;
+}
+
+#wrapper-black .place-sold-out {
+	margin-left: 16px;
+	padding: 6px 6px;
+	background-color: #f44336;
+	color: #fff;
+	font-size: 14px;
+}
+
+#wrapper-black .place-number {
+	float: right;
+	background-color: #000;
+	color: #fff;
+	padding: 0 7px;
+	border-radius: 50%;
+	margin-right: 16px;
+}
+
+#wrapper-black .list-img-padding {
+	margin-left: -8px;
+	margin-right: -8px;
+	padding: 32px 0;
+	display: flex;
+}
+
+#wrapper-black .list-item {
+	padding: 0 8px;
+	width: 33.33333%;
+	
+}
+
+#wrapper-black .img-city {
+	width:  100%;
+	height: 184px;
+	cursor: pointer;
+}
+
+#wrapper-black .img-city:hover {
+	opacity: 0.6;
+}
+#wrapper-black .text-padding {
+	background-color: #fff;
+	padding: 8px 16px;
+} 
+
+#wrapper-black .text-opacity {
+	ont-style: italic;
+	opacity: 0.60;
+	font-family: "Lato", sans-serif;
+	margin: 15px 0;
+	font-size: 15px;
+}
+
+#wrapper-black .heading-list {
+	margin: 15px 0;
+}
+	
+#wrapper-black .button-btn {
+	padding: 8px 16px;
+	background-color: #000;
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: #fff;
+	border: none;
+	font-family: "Lato", sans-serif;
+	cursor: pointer;
+}
+
+#wrapper-black .button-btn:hover {
+	background-color: #ccc;
+	color: black;
+}
+
+#contact {
+
+}
+
+#contact .padding-contact {
+	padding: 32px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+#contact .list-contact {
+	list-style-type: none;
+	line-height: 30px;
+	font-size: 18px;
+	width: 50%;
+}
+
+#contact .from-contact {
+	width: 50%;
+	
+	
+}
+
+#contact .icon-contact{
+	width: 30px;
+	
+}
+#contact .row {
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+#contact .row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#contact .col {
+	float:left;
+	padding: 0 8px;
+}
+
+#contact .col-half {
+	width: 50%;
+	
+}
+
+#contact .col-full {
+	width: 100%;
+}
+
+#contact .input-contact {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+#contact .input-contact {
+	width: 100%;
+	font-size: 15px;
+}
+
+#contact .button-btn {
+	float: right;
+	margin: 16px 0;
+	padding: 8px 16px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	font-size: 15px;
+	font-family: "Lato", sans-serif;
+	cursor: pointer;
+}
+
+#footer {
+	padding: 64px 16px;
+	text-align: center;
+}
+
+#footer .icon-footer {
+	font-size: 25px;
+	padding: 0 5px;
+}
+
+#footer .icon-footer:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+#footer .text-underline {
+	text-decoration: underline;
+	color: #000;
+}
+
+#footer .text-footer {
+	font-size: 15px;
+	margin: 15px 0;
+	font-family: "Lato", sans-serif;
+	opacity: 0.60;
+}
